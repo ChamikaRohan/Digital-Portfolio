@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Links() {
   const items = [
-    "HomePage",
+    "Home",
     "Services",
     "Portfolio",
     "Contact",
