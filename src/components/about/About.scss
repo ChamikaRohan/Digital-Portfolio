@@ -45,22 +45,23 @@
           text-align: justify;
   
           h2 {
-            font-size: 2.5rem; 
-            margin-bottom: 20px; 
-            color: coral; 
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: coral;
+            font-family: 'Montserrat', sans-serif;
           }
   
           p {
-            font-size: 1.2rem; 
-            line-height: 1.6; 
-            color: white; 
-            margin-bottom: 20px; 
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: white;
+            margin-bottom: 20px;
             position: relative;
             display: inline-block;
   
             .star:before {
               content: '✨';
-              animation: star 1s linear infinite; 
+              animation: star 1s linear infinite;
               display: inline-block;
               transform-origin: 50% 50%;
             }
@@ -77,18 +78,17 @@
               transform: scale(1);
             }
           }
-
-
+  
           .rocket {
             display: inline-block;
-            animation: moveRocket 12s linear infinite; 
-            margin-bottom: -8px; 
+            animation: moveRocket 12s linear infinite;
+            margin-bottom: -8px;
             animation-delay: 2s;
           }
-
+  
           @keyframes moveRocket {
             0% {
-              transform: translate(0, 0); 
+              transform: translate(0, 0);
             }
             10% {
               transform: translate(100px, -50px) rotate(-45deg);
@@ -97,22 +97,70 @@
               transform: translate(-100px, 50px) rotate(45deg);
             }
             70% {
-              transform: translate(50px, 100px) rotate(-30deg); 
+              transform: translate(50px, 100px) rotate(-30deg);
             }
             90% {
-              transform: translate(0, 0); 
+              transform: translate(0, 0);
             }
           }
-
   
           h3 {
             max-width: 100%;
             word-wrap: break-word;
             color: coral;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
           }
   
-          ul {
-            padding-left: 20px;
+          .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Adjust spacing between badges */
+          }
+  
+          .badge {
+            display: flex;
+            align-items: center;
+            background-color: rgba(170, 136, 136, 0.17);
+            padding: 4px 10px;
+            border-radius: 6px;
+            color: #fff; 
+            font-size: 0.7rem; 
+          }
+  
+          .badge span:first-child {
+            margin-right: 8px; 
+          }
+  
+          /* Logo Marquee Animation */
+          .logosContainer {
+            overflow: hidden;
+          }
+  
+          .marquee {
+            display: flex;
+            animation: marqueeMove 30s linear infinite;
+          }
+  
+          .track {
+            display: flex;
+            gap: 10px; /* Adjust spacing between logos */
+            align-items: center;
+          }
+  
+          .track img {
+            height: 30px; 
+            width: auto;
+          }
+  
+          @keyframes marqueeMove {
+            0% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
           }
         }
       }
