@@ -18,7 +18,7 @@ export default function Links() {
           key={item}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: index * 0.5, duration: 0.6 }} // Staggering effect
+          transition={{ delay: index * 0.5, duration: 0.6 }} 
         >
           {item}
         </motion.a>
