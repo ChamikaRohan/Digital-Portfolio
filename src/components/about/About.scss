@@ -1,124 +1,222 @@
 .about {
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(180deg, #0c0c1d, #111132);
-    position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  .wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
-  
-    .wrapper {
-      max-width: 1000px;
-      width: 100%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding-right: 40px;
-      padding-left: 40px;
-      box-sizing: border-box;
-  
-      .left {
-        img {
-          height: 65vh;
-          width: auto;
-          border-radius: 18px;
-        }
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+
+    .left {
+      img {
+        height: 65vh;
+        width: auto;
+        border-radius: 18px;
       }
-  
-      .right {
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: calc(100% - 380px);
+
+      .right-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        max-width: calc(100% - 380px);
-  
-        .right-container {
+        justify-content: flex-start;
+        height: 80vh;
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: justify;
+
+        h2 {
+          font-size: 2.5rem;
+          margin-bottom: 10px;
+          color: coral;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          color: white;
+          margin-bottom: 20px;
+          position: relative;
+          display: inline-block;
+
+          .star:before {
+            content: '✨';
+            animation: star 1s linear infinite;
+            display: inline-block;
+            transform-origin: 50% 50%;
+          }
+        }
+
+        @keyframes star {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        .rocket {
+          display: inline-block;
+          animation: moveRocket 12s linear infinite;
+          margin-bottom: -8px;
+          animation-delay: 2s;
+        }
+
+        @keyframes moveRocket {
+          0% {
+            transform: translate(0, 0);
+          }
+          10% {
+            transform: translate(100px, -50px) rotate(-45deg);
+          }
+          30% {
+            transform: translate(-100px, 50px) rotate(45deg);
+          }
+          70% {
+            transform: translate(50px, 100px) rotate(-30deg);
+          }
+          90% {
+            transform: translate(0, 0);
+          }
+        }
+
+        h3 {
+          max-width: 100%;
+          word-wrap: break-word;
+          color: coral;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .badges {
           display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          height: 80vh;
+          flex-wrap: wrap;
+          gap: 10px; /* Adjust spacing between badges */
+        }
+
+        .badge {
+          display: flex;
+          align-items: center;
+          background-color: rgba(170, 136, 136, 0.17);
+          padding: 4px 10px;
+          border-radius: 6px;
+          color: #fff; 
+          font-size: 0.7rem; 
+        }
+
+        .badge span:first-child {
+          margin-right: 8px; 
+        }
+
+        .logosContainer {
+          overflow: hidden;
+          position: relative;
           width: 100%;
-          padding: 40px;
-          box-sizing: border-box;
-          text-align: justify;
-  
+        }
+
+        .marquee {
+          display: flex;
+          width: 200%;
+          animation: marqueeMove 10s linear infinite;
+        }
+
+        .track {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          white-space: nowrap;
+        }
+
+        .track img {
+          height: 30px;
+          width: auto;
+        }
+
+        @keyframes marqueeMove {
+          0% {
+            transform: translateX(30%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      margin-top: 25px;
+      flex-direction: column;
+      padding: 20px;
+
+      .left {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: auto;
+          width: 200px;
+          border-radius: 18px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .right {
+        max-width: 100%;
+
+        .right-container {
+          height: auto;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
           h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: coral;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 1.7rem;
           }
-  
+
           p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: white;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
-  
-            .star:before {
-              content: '✨';
-              animation: star 1s linear infinite;
-              display: inline-block;
-              transform-origin: 50% 50%;
-            }
+            font-size: 1rem;
           }
-  
-          @keyframes star {
-            0% {
-              transform: scale(1);
-            }
-            50% {
-              transform: scale(1.2);
-            }
-            100% {
-              transform: scale(1);
-            }
-          }
-  
-          .rocket {
-            display: inline-block;
-            animation: moveRocket 12s linear infinite;
-            margin-bottom: -8px;
-            animation-delay: 2s;
-          }
-  
-          @keyframes moveRocket {
-            0% {
-              transform: translate(0, 0);
-            }
-            10% {
-              transform: translate(100px, -50px) rotate(-45deg);
-            }
-            30% {
-              transform: translate(-100px, 50px) rotate(45deg);
-            }
-            70% {
-              transform: translate(50px, 100px) rotate(-30deg);
-            }
-            90% {
-              transform: translate(0, 0);
-            }
-          }
-  
+
           h3 {
-            max-width: 100%;
-            word-wrap: break-word;
-            color: coral;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            font-family: 'Montserrat', sans-serif;
-          }
-  
-          .badges {
+            font-size: 0.9rem;
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px; /* Adjust spacing between badges */
+            align-items: center;
+            justify-content: center;
           }
-  
+
+          .badges {
+            justify-content: center;
+          }
+
           .badge {
             display: flex;
             align-items: center;
@@ -126,44 +224,36 @@
             padding: 4px 10px;
             border-radius: 6px;
             color: #fff; 
-            font-size: 0.7rem; 
+            font-size: 0.6rem; 
           }
-  
-          .badge span:first-child {
-            margin-right: 8px; 
-          }
-  
-          /* Logo Marquee Animation */
+
           .logosContainer {
-            overflow: hidden;
+            .marquee {
+              animation: marqueeMoveMobile 10s linear infinite;
+            }
           }
-  
-          .marquee {
-            display: flex;
-            animation: marqueeMove 30s linear infinite;
-          }
-  
-          .track {
-            display: flex;
-            gap: 10px; /* Adjust spacing between logos */
-            align-items: center;
-          }
-  
-          .track img {
-            height: 30px; 
-            width: auto;
-          }
-  
+
           @keyframes marqueeMove {
             0% {
-              transform: translateX(100%);
+              transform: translateX(90%);
             }
             100% {
-              transform: translateX(-100%);
+              transform: translateX(-160%);
             }
           }
         }
       }
     }
   }
+
+  @keyframes marqueeMoveMobile {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   
+}

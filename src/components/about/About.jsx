@@ -53,10 +53,30 @@ export default function About() {
               <section className="logosContainer">
                 <div className="marquee">
                   <div className="track">
-                    <img src="/Logos/Java.jpeg" alt="Java" />
-                    <img src="" alt="Placeholder"  />
-                    <img src="" alt="Placeholder"  />
-                    {/* Add more empty img tags here */}
+                    <img src="/Logos/Java.png" alt="Java" />
+                    <img src="/Logos/Python.png" alt="Python" />
+                    <img src="/Logos/C.png" alt="C" />
+                    <img src="/Logos/C++.png" alt="C++" />
+                    <img src="/Logos/JavaScript.png" alt="JavaScript" />
+                    <img src="/Logos/React.png" alt="React" />
+                    <img src="/Logos/Node.png" alt="Node" />
+                    <img src="/Logos/Express.png" alt="Express" />
+                    <img src="/Logos/HTML.png" alt="HTML" />
+                    <img src="/Logos/CSS.svg" alt="CSS" />
+                    <img src="/Logos/Sass.png" alt="Sass" />
+                    <img src="/Logos/php.png" alt="php" />
+                    <img src="/Logos/ReactNative.svg" alt="ReactNative" />
+                    <img src="/Logos/SpringBoot.png" alt="SpringBoot" />
+                    <img src="/Logos/Mysql.png" alt="Mysql" />
+                    <img src="/Logos/MongoDB.svg" alt="MongoDB" />
+                    <img src="/Logos/Tensorflow.png" alt="Tensorflow" />
+                    <img src="/Logos/Keras.png" alt="Keras" />
+                    <img src="/Logos/ScikitLearn.png" alt="ScikitLearn" />
+                    <img src="/Logos/git.png" alt="Git" />
+                    <img src="/Logos/postman.svg" alt="postman" />
+                    <img src="/Logos/canva.png" alt="Canva" />
+                    <img src="/Logos/ps.png" alt="Photoshop" />
+                    <img src="/Logos/lr.png" alt="Lightroom" />
                   </div>
                 </div>
               </section>
