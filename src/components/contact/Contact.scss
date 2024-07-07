@@ -1,4 +1,4 @@
-.contact{
+.contact {
     height: 100%;
     max-width: 800px;
     margin: auto;
@@ -6,26 +6,32 @@
     align-items: center;
     gap: 50px;
 
-    .textContainer{
-        flex: 1; 
+    .textContainer {
+        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 40px;
 
-        h1{
+        h1 {
             font-size: 60px;
             line-height: 58px;
         }
 
-        span{
+        span {
             font-weight: 300;
         }
     }
 
-    .formContainer{
-        flex: 1; 
+    .formContainer {
+        flex: 1;
 
-        form{
+        .phoneSvg {
+           stroke: coral;
+           position: absolute;
+           margin: auto;
+        }
+
+        form {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -35,15 +41,15 @@
         flex-direction: column;
         gap: 20px;
 
-        input, textarea{
-            padding: 30px;
+        input, textarea {
+            padding: 15px;
             background-color: transparent;
             border: 1px solid white;
             color: white;
             border-radius: 5px;
         }
 
-        button{
+        button {
             padding: 20px;
             border: none;
             background-color: coral;
