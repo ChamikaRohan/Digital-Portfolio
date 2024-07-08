@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -23,6 +25,15 @@
             gap: 40px;
             z-index: 2;
 
+            @include mobile{
+                height: 100%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+                justify-content: flex-start;
+            }
+
             h2 {
                 font-size: 40px;
                 color: coral;
@@ -30,6 +41,11 @@
                 animation: slide 3s infinite alternate;
                 font-family: 'Montserrat', sans-serif;
                 transition: transform 0.3s ease, text-shadow 0.3s ease;
+                
+                @include mobile{
+                    font-size: 20px;
+                }
+            
             }
             
             h2:hover {
@@ -51,6 +67,9 @@
             h1 {
                 font-size: 58px;
                 color: white;
+                @include mobile{
+                    font-size: 32px;
+                }
             }
 
             .buttons {
@@ -71,6 +90,11 @@
                     color: #fff;
                     border: none;
                     cursor: pointer;
+
+                    @include mobile{
+                        height: 2rem;
+                        padding: 0 1.5rem;
+                    }
                   }
                   
                   .lat-button:hover::before {
@@ -83,6 +107,9 @@
                     font-size: 15px;
                     font-family: 'Montserrat', sans-serif;
                     
+                    @include mobile{
+                        font-size: 12px;
+                    }
                   }
                   
                   .lat-button::before {
@@ -119,11 +146,24 @@
             height: auto;
             z-index: 1;
 
+            @include mobile{
+                height: 58%;
+                width: 100%;
+                right: 242px;
+                bottom: 0;
+            }
+
             img {
                 height: 600px;
                 max-width: 100%;
                 display: block;
                 margin: auto;
+
+                @include mobile{
+                    height: 350px;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
             }
         }
 
@@ -138,25 +178,25 @@
         }
     }
 
-    @media (max-width: 768px) {
-        .wrapper {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+    // @media (max-width: 768px) {
+    //     .wrapper {
+    //         flex-direction: column;
+    //         align-items: center;
+    //         text-align: center;
+    //     }
 
-        .imageContainer {
-            right: 0;
-            transform: none;
-            width: 100%;
-            height: auto;
-            position: static;
-            margin-top: 20px;
+    //     .imageContainer {
+    //         right: 0;
+    //         transform: none;
+    //         width: 100%;
+    //         height: auto;
+    //         position: static;
+    //         margin-top: 20px;
 
-            img {
-                height: 200px;
-                max-height: 30vh;
-            }
-        }
-    }
+    //         img {
+    //             height: 200px;
+    //             max-height: 30vh;
+    //         }
+    //     }
+    // }
 }

@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .Sidebar {
     display: flex;
     flex-direction: column;
@@ -15,7 +17,10 @@
       bottom: 0;
       width: 400px;
       background: white;
-      clip-path: circle(30px at 50px 50px); // Ensure initial state for clip-path
+      clip-path: circle(30px at 50px 50px); 
+      @include mobile{
+        width: 180px;
+    }
       
       .links {
         position: absolute;
