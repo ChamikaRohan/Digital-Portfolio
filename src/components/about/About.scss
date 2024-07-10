@@ -169,91 +169,91 @@
     }
   }
 
-  // @media (max-width: 768px) {
-  //   .wrapper {
-  //     margin-top: 26px;
-  //     flex-direction: column;
-  //     padding: 20px;
+  @media (max-width: 768px) {
+    .wrapper {
+      margin-top: 26px;
+      flex-direction: column;
+      padding: 20px;
 
-  //     .left {
-  //       max-width: 100%;
-  //       display: flex;
-  //       align-items: center;
+      .left {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
 
-  //       img {
-  //         height: auto;
-  //         width: 200px;
-  //         border-radius: 18px;
-  //         margin-bottom: 10px;
-  //       }
-  //     }
+        img {
+          height: auto;
+          width: 200px;
+          border-radius: 18px;
+          margin-bottom: 10px;
+        }
+      }
 
-  //     .right {
-  //       max-width: 100%;
+      .right {
+        max-width: 100%;
 
-  //       .right-container {
-  //         height: auto;
-  //         padding: 5px;
-  //         display: flex;
-  //         align-items: center;
-  //         justify-content: center;
+        .right-container {
+          height: auto;
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-  //         h2 {
-  //           font-size: 1.7rem;
-  //         }
+          h2 {
+            font-size: 1.7rem;
+          }
 
-  //         p {
-  //           font-size: 1rem;
-  //         }
+          p {
+            font-size: 1rem;
+          }
 
-  //         h3 {
-  //           font-size: 0.9rem;
-  //           display: flex;
-  //           align-items: center;
-  //           justify-content: center;
-  //         }
+          h3 {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 
-  //         .badges {
-  //           justify-content: center;
-  //         }
+          .badges {
+            justify-content: center;
+          }
 
-  //         .badge {
-  //           display: flex;
-  //           align-items: center;
-  //           background-color: rgba(170, 136, 136, 0.17);
-  //           padding: 4px 10px;
-  //           border-radius: 6px;
-  //           color: #fff; 
-  //           font-size: 0.6rem; 
-  //         }
+          .badge {
+            display: flex;
+            align-items: center;
+            background-color: rgba(170, 136, 136, 0.17);
+            padding: 4px 10px;
+            border-radius: 6px;
+            color: #fff; 
+            font-size: 0.6rem; 
+          }
 
-  //         .logosContainer {
-  //           .marquee {
-  //             animation: marqueeMoveMobile 10s linear infinite;
-  //           }
-  //         }
+          .logosContainer {
+            .marquee {
+              animation: marqueeMoveMobile 10s linear infinite;
+            }
+          }
 
-  //         @keyframes marqueeMove {
-  //           0% {
-  //             transform: translateX(90%);
-  //           }
-  //           100% {
-  //             transform: translateX(-160%);
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+          @keyframes marqueeMove {
+            0% {
+              transform: translateX(90%);
+            }
+            100% {
+              transform: translateX(-160%);
+            }
+          }
+        }
+      }
+    }
+  }
 
-  // @keyframes marqueeMoveMobile {
-  //   0% {
-  //     transform: translateX(0%);
-  //   }
-  //   100% {
-  //     transform: translateX(-50%);
-  //   }
-  // }
+  @keyframes marqueeMoveMobile {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
   
 }
