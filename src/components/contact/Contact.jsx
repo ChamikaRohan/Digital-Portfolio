@@ -62,15 +62,15 @@ export default function Contact() {
             <motion.h1 variants={itemVariants}>Let's work together</motion.h1>
             <motion.div className="item" variants={itemVariants}>
                 <h2>Mail</h2>
-                <span>hello@react.dev</span>
+                <span>chamika707@gmail.com</span>
             </motion.div>
             <motion.div className="item" variants={itemVariants}>
                 <h2>Address</h2>
-                <span>Hello Street, New York</span>
+                <span>PO Box : 130, TRI, Hanthana, Kandy</span>
             </motion.div>
             <motion.div className="item" variants={itemVariants}>
                 <h2>Phone</h2>
-                <span>+94716868110</span>
+                <span>071-6868110</span>
             </motion.div>
         </motion.div>
         <div className="formContainer">

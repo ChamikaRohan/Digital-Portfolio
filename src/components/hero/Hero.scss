@@ -174,7 +174,12 @@
             white-space: nowrap;
             color: #ffffff09;
             width: 250%;
-            font-weight: bold
+            font-weight: bold;
+
+            @include mobile{
+                font-size: 20vh;
+                bottom: 40px;
+            }
         }
     }
 
