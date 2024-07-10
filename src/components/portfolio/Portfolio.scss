@@ -13,7 +13,7 @@
         font-size: 30px;
 
         @include mobile{
-            padding-top: calc(100vh - 100px);
+            padding-top: calc(100vh - 80px);
             font-size: 24px;
         }
 
@@ -50,6 +50,7 @@
 
             @include mobile{
                 flex-direction: column;
+                gap: 10px;
             }
 
         .imageContainer{
@@ -59,6 +60,9 @@
             @include mobile{
                 width: 100%;
                 max-height: 270px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
 
@@ -68,8 +72,10 @@
             object-fit: cover;
 
             @include mobile{
-                margin-top: 40px;
-                object-fit: contain;
+                margin-top: 80px;
+                // object-fit: contain;
+                width: 70%;
+                height: 100%;
             }
         }
         }
@@ -86,6 +92,7 @@
                 margin-right: 40px;
                 align-items: center;
                 text-align: center;
+                margin-top: 60px;
             }
 
             h2{
@@ -118,6 +125,7 @@
                 font-weight: 600;
 
                 @include mobile{
+                    margin-top: 20px;
                     width: 120px;
                     font-size: 12px;
                 }
