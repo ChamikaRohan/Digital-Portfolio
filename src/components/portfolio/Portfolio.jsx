@@ -51,7 +51,21 @@ const items = [
         img: [
             "/Portfolio/homeaid.png"
         ],
-        desc: "HomeAid is a cutting-edge Android app designed to seamlessly connect users with professional domestic cleaning and repair services, providing convenience and reliability at your fingertips. The app offers an intuitive interface for users to browse available services, search service providers, and schedule appointments. By leveraging modern mobile technologies, HomeAid ensures a hassle-free experience for users seeking quality domestic services.",
+        desc: "HomeAid is a cutting-edge Android app designed to seamlessly connect users with professional domestic cleaning and repair services, providing convenience and reliability at your fingertips. The app offers an intuitive interface for users to browse available services, search service providers, and schedule appointments. By leveraging modern mobile technologies, HomeAid ensures a hassle-free experience for users seeking quality domestic services. <br /><br />Technologies Used: React Native, CSS, Expo and HyGraph",
+        link: "https://github.com/ChamikaRohan/HomeAid-Mobile-App",
+        button: "Visit Git"
+    },
+    {
+        id: 5,
+        title: "MotionPilot",
+        img: [
+            "/Portfolio/motionpilot_1.png",
+            "/Portfolio/motionpilot_2.png",
+            "/Portfolio/motionpilot_3.png",
+            "/Portfolio/motionpilot_4.png",
+            "/Portfolio/motionpilot_5.png"
+        ],
+        desc: "MotionPilot is a software that revolutionizes human-computer interaction by utilizing gesture recognition technology using deep learning, MotionPilot identifies user hand gestures in real-time through a webcam, allowing for intuitive and efficient control of computer functions. MotionPilot provides a user-friendly interface that visually guides users on the appropriate hand gestures to trigger specific actions, making it a versatile and powerful tool. <br /><br />Technologies Used: Tensorflow, Keras, Google Colab, Python, Mediapipe, OpenCV and PyQT",
         link: "https://github.com/ChamikaRohan/HomeAid-Mobile-App",
         button: "Visit Git"
     }
