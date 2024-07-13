@@ -7,7 +7,7 @@
         position: sticky;
         top: 0;
         left: 0;
-        padding-top: 50px;
+        padding-top: 40px;
         text-align: center;
         color: coral;
         font-size: 30px;
@@ -25,9 +25,8 @@
         }
 
         .progressBar{
-            height: 10px;
+            height: 5px;
             background-color: white;
-
         }
     }
 
@@ -84,7 +83,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap:20px;
 
             @include mobile{
                 transform: none !important;
@@ -93,19 +92,41 @@
                 align-items: center;
                 text-align: center;
                 margin-top: 60px;
+                gap:10px;
             }
 
             h2{
-                font-size: 42px;
+                font-size: 25px;
 
                 @include mobile{
                 font-size: 25px;
                 }
             }
 
+            .badges {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px; /* Adjust spacing between badges */
+              }
+      
+              .badge {
+                display: flex;
+                align-items: center;
+                background-color: rgba(170, 136, 136, 0.17);
+                padding: 4px 10px;
+                border-radius: 6px;
+                color: #fff; 
+                font-size: 0.7rem; 
+              }
+      
+              .badge span:first-child {
+                margin-right: 8px; 
+              }
+      
+
             p{
                 color: gray;
-                font-size: 18px;
+                font-size: 15px;
                 text-align: justify;
 
                 @include mobile{
@@ -125,7 +146,7 @@
                 font-weight: 600;
 
                 @include mobile{
-                    margin-top: 20px;
+                    margin-top: 10px;
                     width: 120px;
                     font-size: 12px;
                 }

@@ -15,7 +15,8 @@ const items = [
         ],
         desc: "This innovative ticket reselling platform is designed to facilitate seamless transactions for users who wish to resell or buy event tickets that have already been purchased. Users can effortlessly search for tickets, view all related details, and request tickets. For sellers, the platform offers a streamlined signup and sign-in process, enabling them to create and publish ticket listings. Sellers also receive email notifications for ticket requests.<br /><br />Technologies Used: MERN Stack, Bootstrap, Nodemailer and JWT",
         link: "https://tickettwist.onrender.com/",
-        button: "Visit Site"
+        button: "Visit Site",
+        field: ["Web Development"]
     },
     {
         id: 2,
@@ -28,7 +29,8 @@ const items = [
         ],
         desc: "DreamMemories is a project featuring a memory store designed with a modern UI to provide a seamless user experience. The platform allows users to browse and like posts at any time. Users who sign up and sign in can post new memories and delete their old ones. The focus is on creating an intuitive and engaging interface that encourages users to share and interact with their memories. <br /><br />Technologies Used: MERN Stack, Material UI, CSS and JWT",
         link: "https://dreammemories.onrender.com/",
-        button: "Visit Site"
+        button: "Visit Site",
+        field: ["Web Development"]
     },
     {
         id: 3,
@@ -43,17 +45,19 @@ const items = [
         ],
         desc: "Discover culinary delights with SavoryScape: a dynamic platform designed to streamline recipe management and inspire culinary creativity. This open platform allows anyone to explore a diverse array of recipes, search for recipes by name, view detailed recipe information, create and share their own recipes, and comment on others' recipes. With SavoryScape, users can enjoy all these features without the need to log in, making it accessible and welcoming for everyone.  <br /><br />Technologies Used: React, Material UI, Spring Boot and MongoDB",
         link: "https://savoryscape.onrender.com/",
-        button: "Visit Site"
+        button: "Visit Site",
+        field: ["Web Development"]
     },
     {
         id: 4,
-        title: "HomeAid Mobile App",
+        title: "HomeAid App",
         img: [
             "/Portfolio/homeaid.png"
         ],
         desc: "HomeAid is a cutting-edge Android app designed to seamlessly connect users with professional domestic cleaning and repair services, providing convenience and reliability at your fingertips. The app offers an intuitive interface for users to browse available services, search service providers, and schedule appointments. By leveraging modern mobile technologies, HomeAid ensures a hassle-free experience for users seeking quality domestic services. <br /><br />Technologies Used: React Native, CSS, Expo and HyGraph",
         link: "https://github.com/ChamikaRohan/HomeAid-Mobile-App",
-        button: "Visit Git"
+        button: "Visit Git",
+        field: ["Mobile App Development"]
     },
     {
         id: 5,
@@ -67,7 +71,27 @@ const items = [
         ],
         desc: "MotionPilot is a software that revolutionizes human-computer interaction by utilizing gesture recognition technology using deep learning, MotionPilot identifies user hand gestures in real-time through a webcam, allowing for intuitive and efficient control of computer functions. MotionPilot provides a user-friendly interface that visually guides users on the appropriate hand gestures to trigger specific actions, making it a versatile and powerful tool. <br /><br />Technologies Used: Tensorflow, Keras, Google Colab, Python, Mediapipe, OpenCV and PyQT",
         link: "https://github.com/ChamikaRohan/HomeAid-Mobile-App",
-        button: "Visit Git"
+        button: "Visit Git",
+        field: ["Deep Learning" ,"Software Development", "Machine Vision", "Image Processing"]
+    },
+    {
+        id: 6,
+        title: "Red-Wine Quality Prediction",
+        img: [
+            "/Portfolio/wine_1.png",
+            "/Portfolio/wine_2.png",
+            "/Portfolio/wine_3.png",
+            "/Portfolio/wine_4.png",
+            "/Portfolio/wine_5.png",
+            "/Portfolio/wine_6.png",
+            "/Portfolio/wine_7.png",
+            "/Portfolio/wine_8.png",
+            "/Portfolio/wine_9.png"
+        ],
+        desc: "This project aims to classify the quality of red Vinho Verde wine using machine learning techniques based on its physicochemical properties. The dataset includes attributes like acidity, sugar, sulfur dioxide levels, pH, and alcohol content, along with quality scores. Two classification algorithms, Random Forest and Support Vector Machines (SVM), will be implemented, trained, and evaluated to predict wine quality accurately. <br /><br />Technologies Used: Tensorflow, Keras, Google Colab, Pandas, Matplotlib, NumPy and Python",
+        link: "https://github.com/ChamikaRohan/Machine-Learning-based-Red-Wine-Quality-Prediction",
+        button: "Visit Git",
+        field: ["Machine Learning", "Data Science"]
     }
 ];
 
@@ -96,8 +120,16 @@ const Single = ({ item }) => {
                     <div className="imageContainer">
                         <img src={item.img[currentImageIndex]} alt={item.title} />
                     </div>
-                    <motion.div className="textContainer" style={{y}}>
+                    <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
+                        <div className="badges">
+                            {item.field.map((field, index) => (
+                                <div className="badge" key={index}>
+                                    <span role="img" aria-label={field}>💻</span>
+                                    <span>{field}</span>
+                                </div>
+                            ))}
+                        </div>
                         <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
                         <button onClick={() => window.open(item.link, "_blank")}>{item.button}</button>
                     </motion.div>
