@@ -108,6 +108,21 @@ const items = [
         link: "https://github.com/ChamikaRohan/InceptionV3-based-Image-classifier-with-TransferLearning",
         button: "Visit Git",
         field: ["Deep Learning", "Data Science"]
+    },
+    {
+        id: 8,
+        title: "Realtime QR-Barcode Reading System",
+        img: [
+            "/Portfolio/qrbar_1.png",
+            "/Portfolio/qrbar_2.png",
+            "/Portfolio/qrbar_3.png",
+            "/Portfolio/qrbar_4.png",
+            "/Portfolio/qrbar_5.png"
+        ],
+        desc: "The Real-time QR Code and Barcode Reading System is a Python-based software with user friendly UI that leverages computer vision and image processing technologies to efficiently recognize and decode QR codes and barcodes in real-time using a webcam. <br /><br />Technologies Used: Python, OpenCV and Pyzbar",
+        link: "https://github.com/ChamikaRohan/Realtime-QR-Barcode-Reading-System",
+        button: "Visit Git",
+        field: ["Image Processing", "Software Development"]
     }
 ];
 
