@@ -92,6 +92,22 @@ const items = [
         link: "https://github.com/ChamikaRohan/Machine-Learning-based-Red-Wine-Quality-Prediction",
         button: "Visit Git",
         field: ["Machine Learning", "Data Science"]
+    },
+    {
+        id: 7,
+        title: "InceptionV3 based Rice Image classifier",
+        img: [
+            "/Portfolio/inception_1.png",
+            "/Portfolio/inception_2.png",
+            "/Portfolio/inception_3.png",
+            "/Portfolio/inception_4.png",
+            "/Portfolio/inception_5.png",
+            "/Portfolio/inception_6.png"
+        ],
+        desc: "This project aims to develop a deep learning model for categorizing rice images using transfer learning. The dataset consists 75,000 of rice pictures categorized into five types. Using the Inception V3 via transfer learning the goal is to accurately classify these rice images. Transfer learning enhances models ability to distinguish between different rice varieties. The project involves dataset exploration, model design, implementation of transfer learning and performance evaluation  <br /><br />Technologies Used: Tensorflow, Keras, Jupyter Notebook, Pandas, Matplotlib, NumPy and Python",
+        link: "https://github.com/ChamikaRohan/InceptionV3-based-Image-classifier-with-TransferLearning",
+        button: "Visit Git",
+        field: ["Deep Learning", "Data Science"]
     }
 ];
 

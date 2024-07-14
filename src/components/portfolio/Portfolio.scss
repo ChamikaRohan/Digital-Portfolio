@@ -13,20 +13,24 @@
         font-size: 30px;
 
         @include mobile{
-            padding-top: calc(100vh - 80px);
+            padding-top: calc(100vh - 60px);
             font-size: 24px;
         }
 
         h1{
             font-size: 40px;
             @include mobile{
-                font-size: 36px;
+                font-size: 30px;
             }
         }
 
         .progressBar{
             height: 5px;
             background-color: white;
+
+            @include mobile{
+                height: 2px;
+            }
         }
     }
 
@@ -99,14 +103,18 @@
                 font-size: 25px;
 
                 @include mobile{
-                font-size: 25px;
+                font-size: 18px;
                 }
             }
 
             .badges {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px; /* Adjust spacing between badges */
+                gap: 10px; 
+
+                @include mobile{
+                    gap: 5px; 
+                }
               }
       
               .badge {
@@ -117,6 +125,11 @@
                 border-radius: 6px;
                 color: #fff; 
                 font-size: 0.7rem; 
+
+                @include mobile{
+                    padding: 3px 5px;
+                    font-size: 0.5rem; 
+                }
               }
       
               .badge span:first-child {
