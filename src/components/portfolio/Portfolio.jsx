@@ -50,7 +50,21 @@ const items = [
     },
     {
         id: 4,
-        title: "HomeAid App",
+        title: "InteliTrend Health Platoform",
+        img: [
+            "/Portfolio/intelitrend_1.png",
+            "/Portfolio/intelitrend_2.png",
+            "/Portfolio/intelitrend_3.png",
+            "/Portfolio/intelitrend_4.png"
+        ],
+        desc: "InteliTrend Web Application: This intelligent web application serves as a comprehensive health management platform for patients and doctors. Patients can upload and manage their medical documents effortlessly, with the system automatically scanning and updating analytical details. The platform features an e-channeling service, allowing patients to search for and schedule appointments with doctors. Doctors can access patients' medical histories, approve appointment requests, and update their availability and location, ensuring streamlined and informed healthcare interactions.  <br /><br />Technologies Used: MERN Stack, Material UI, CSS, JWT and TesseractJS",
+        link: "https://github.com/ChamikaRohan/InteliTrend-WebApp",
+        button: "Visit Git",
+        field: ["Web Development"]
+    },
+    {
+        id: 5,
+        title: "Home-Aid Mobile App",
         img: [
             "/Portfolio/homeaid.png"
         ],
@@ -60,7 +74,7 @@ const items = [
         field: ["Mobile App Development"]
     },
     {
-        id: 5,
+        id: 6,
         title: "MotionPilot",
         img: [
             "/Portfolio/motionpilot_1.png",
@@ -75,7 +89,7 @@ const items = [
         field: ["Deep Learning" ,"Software Development", "Machine Vision", "Image Processing"]
     },
     {
-        id: 6,
+        id: 7,
         title: "Red-Wine Quality Prediction",
         img: [
             "/Portfolio/wine_1.png",
@@ -94,7 +108,7 @@ const items = [
         field: ["Machine Learning", "Data Science"]
     },
     {
-        id: 7,
+        id: 8,
         title: "InceptionV3 based Rice Image classifier",
         img: [
             "/Portfolio/inception_1.png",
@@ -110,7 +124,7 @@ const items = [
         field: ["Deep Learning", "Data Science"]
     },
     {
-        id: 8,
+        id: 9,
         title: "Realtime QR-Barcode Reading System",
         img: [
             "/Portfolio/qrbar_1.png",

@@ -61,7 +61,7 @@ export default function Contact() {
         <motion.div className="textContainer" variants={containerVariants}>
             <motion.h1 variants={itemVariants}>Let's work together</motion.h1>
             <motion.div className="item" variants={itemVariants}>
-                <h2>Mail</h2>
+                <h2>E-mail</h2>
                 <span>chamika707@gmail.com</span>
             </motion.div>
             <motion.div className="item" variants={itemVariants}>
