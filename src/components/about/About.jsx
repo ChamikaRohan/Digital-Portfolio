@@ -47,7 +47,7 @@ export default function About() {
               </div>
             </div>
             
-            {/* Technology Stack */}
+            {/* Technology Stack Section */}
             <div>
               <h3>Technology Stack</h3>
               <section className="logosContainer">
