@@ -50,7 +50,7 @@ const items = [
     },
     {
         id: 4,
-        title: "InteliTrend Health Platoform",
+        title: "InteliTrend Health Platform",
         img: [
             "/Portfolio/intelitrend_1.png",
             "/Portfolio/intelitrend_2.png",
